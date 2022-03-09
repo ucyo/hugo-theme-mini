@@ -50,12 +50,18 @@ a:hover {
 
 /* markdown content styles */
 blockquote {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 1em;
-  margin-left: 0px;
-  border-left: 3px solid var(--gray-200);
-  color: var(--gray-400);
+  border-left: 3px solid var(--gray-400);
+  color: var(--gray-600);
+  padding: 5px 0em 0px 1em;     /* top right bottom left */
+  margin: 5px 0em 5px -1.2em;
+}
+
+mark {
+  background-color: var(--gray-100);
+  border: 3px solid var(--base-400);
+  border-radius: 5px;
+  padding: .1em .3em .3em .3em;
+  color: var(--gray-700);
 }
 
 hr {
@@ -71,6 +77,10 @@ table {
   margin: 40px 0;
   border-collapse: collapse;
   line-height: 1.5em;
+}
+
+th {
+  background-color: var(--gray-300);
 }
 
 th, td {
@@ -107,14 +117,18 @@ tr:nth-child(odd)>td {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   /* font-family: 'Grenze Gotisch', serif; */
   font-family: 'Sansita Swashed', serif;
   font-weight: 400;
   color: var(--gray-800);
+  margin-bottom: 0em;
 }
 p {
-  margin-block-start: 1.5em;
+  margin-block-start: 0em;
   margin-block-end: 1.5em;
 }
 p,
